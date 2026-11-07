@@ -1,5 +1,5 @@
 export { SignatureMark } from "./signature-mark";
-export { OrangeSpikesBot } from "./orange-spikes-bot";
+export { TealSpikesBot } from "./teal-spikes-bot";
 export { TealSwoopBot } from "./teal-swoop-bot";
 export { YellowAfroBot } from "./yellow-afro-bot";
 export { BerryCurlsBot } from "./berry-curls-bot";
