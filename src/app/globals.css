@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #1c1917;
+  --muted: #44403c;
+  --line: #d6d1ca;
+  --link: #1f5559;
+  --button-bg: #1c1917;
+  --button-fg: #ffffff;
+  --button-hover: #2e2a26;
+  --placeholder: #6b6560;
+  --segment: #f3f1ee;
+  --hair-black: #000000;
+  --hair-brown: #8b3a0f;
+  --hair-blonde: #f2c21b;
+}
+
+/* Dark tokens are repeated for an explicit Dark choice and for System when the OS is dark. */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #121212;
+  --foreground: #f4f1ec;
+  --muted: #c9c2b8;
+  --line: #3f3c39;
+  --link: #9ed4d6;
+  --button-bg: #f4f1ec;
+  --button-fg: #121212;
+  --button-hover: #e4dfd8;
+  --placeholder: #9a948c;
+  --segment: #1e1e1e;
+  --hair-black: #d9d4cc;
+  --hair-brown: #c0703f;
+  --hair-blonde: #f2c21b;
+}
+
+@media (prefers-color-scheme: dark) {
+  html[data-theme="system"] {
+    color-scheme: dark;
+    --background: #121212;
+    --foreground: #f4f1ec;
+    --muted: #c9c2b8;
+    --line: #3f3c39;
+    --link: #9ed4d6;
+    --button-bg: #f4f1ec;
+    --button-fg: #121212;
+    --button-hover: #e4dfd8;
+    --placeholder: #9a948c;
+    --segment: #1e1e1e;
+    --hair-black: #d9d4cc;
+    --hair-brown: #c0703f;
+    --hair-blonde: #f2c21b;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-link: var(--link);
+  --color-button: var(--button-bg);
+  --color-button-fg: var(--button-fg);
+  --color-button-hover: var(--button-hover);
+  --color-segment: var(--segment);
+  --font-sans: var(--font-exo), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
