@@ -1,7 +1,7 @@
 import {
   BerryCurlsBot,
   LavenderSproutBot,
-  OrangeSignatureBot,
+  OrangeSpikesBot,
   TealMohawkBot,
   TealSwoopBot,
   YellowAfroBot,
@@ -14,7 +14,7 @@ export function MarginBots() {
       className="pointer-events-none absolute inset-0 hidden overflow-hidden lg:block"
       aria-hidden="true"
     >
-      <OrangeSignatureBot className="absolute left-[2%] top-[18%] w-28 -rotate-6 xl:w-40" />
+      <OrangeSpikesBot className="absolute left-[2%] top-[18%] w-28 rotate-[14deg] xl:w-40" />
       <TealSwoopBot className="absolute right-[2%] top-[16%] w-24 rotate-3 xl:w-36" />
       <YellowAfroBot className="absolute left-[3%] top-[44%] w-24 rotate-2 xl:w-36" />
       <BerryCurlsBot className="absolute right-[3%] top-[42%] w-28 -rotate-[7deg] xl:w-40" />
@@ -31,7 +31,7 @@ export function CompactBots() {
       className="mt-16 flex items-end justify-center gap-3 sm:gap-5 lg:hidden"
       aria-hidden="true"
     >
-      <OrangeSignatureBot className="w-14 -rotate-6" />
+      <OrangeSpikesBot className="w-14 rotate-[14deg]" />
       <TealSwoopBot className="w-16 rotate-3" />
       <BerryCurlsBot className="w-14 -rotate-3" />
       <YellowAfroBot className="hidden w-16 rotate-6 sm:block" />
