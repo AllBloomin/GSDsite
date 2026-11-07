@@ -72,3 +72,42 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+/* Side bots sit in the gutters around the centered column. */
+.bot-scatter {
+  --gutter: max(0px, calc((100% - 48rem) / 2));
+}
+
+.bot-scatter svg {
+  position: absolute;
+}
+
+.bot-left-edge {
+  top: 13.75rem;
+  left: max(1.35rem, 2vw);
+  width: 4.5rem;
+}
+
+.bot-left-in {
+  top: 50%;
+  left: calc(var(--gutter) - 5.5rem);
+  width: 4.15rem;
+}
+
+.bot-left-low {
+  bottom: 2.75rem;
+  left: min(calc(var(--gutter) * 0.32), calc(var(--gutter) - 6.5rem));
+  width: 5.1rem;
+}
+
+.bot-right-in {
+  top: 22rem;
+  right: calc(var(--gutter) - 5.7rem);
+  width: 4.35rem;
+}
+
+.bot-right-edge {
+  top: 67%;
+  right: max(1.5rem, 2.8vw);
+  width: 5.6rem;
+}
