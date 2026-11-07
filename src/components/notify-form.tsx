@@ -14,7 +14,7 @@ export function NotifyForm() {
       </label>
       <input
         id="notify-email"
-        className="h-14 min-w-0 flex-1 rounded-full border border-line bg-transparent px-5 text-base text-foreground outline-none placeholder:text-[var(--placeholder)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link sm:h-16"
+        className="h-14 min-h-14 w-full rounded-full border border-line bg-transparent px-7 text-base text-foreground outline-none placeholder:text-[var(--placeholder)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link sm:h-16 sm:min-h-16 sm:min-w-0 sm:flex-1 sm:px-5"
         type="email"
         name="email"
         inputMode="email"
