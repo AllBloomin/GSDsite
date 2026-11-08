@@ -15,7 +15,7 @@
   --hair-black: #000000;
   --hair-brown: #8b3a0f;
   --hair-blonde: #f2c21b;
-  --grid-line: rgba(28, 25, 23, 0.045);
+  --grid-line: rgba(28, 25, 23, 0.065);
   --hero-glow: rgba(183, 111, 80, 0.1);
 }
 
@@ -35,7 +35,7 @@ html[data-theme="dark"] {
   --hair-black: #d9d4cc;
   --hair-brown: #c0703f;
   --hair-blonde: #f2c21b;
-  --grid-line: rgba(244, 241, 236, 0.05);
+  --grid-line: rgba(244, 241, 236, 0.07);
   --hero-glow: rgba(183, 111, 80, 0.12);
 }
 
@@ -55,7 +55,7 @@ html[data-theme="dark"] {
     --hair-black: #d9d4cc;
     --hair-brown: #c0703f;
     --hair-blonde: #f2c21b;
-    --grid-line: rgba(244, 241, 236, 0.05);
+    --grid-line: rgba(244, 241, 236, 0.07);
     --hero-glow: rgba(183, 111, 80, 0.12);
   }
 }
@@ -94,25 +94,29 @@ body {
     linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
   background-size: 48px 48px;
   -webkit-mask-image: radial-gradient(
-    ellipse 85% 75% at 16% 10%,
+    ellipse 70% 80% at 35% 40%,
     #000 0%,
-    rgba(0, 0, 0, 0.45) 32%,
-    transparent 72%
+    #000 58%,
+    transparent 100%
   );
   mask-image: radial-gradient(
-    ellipse 85% 75% at 16% 10%,
+    ellipse 70% 80% at 35% 40%,
     #000 0%,
-    rgba(0, 0, 0, 0.45) 32%,
-    transparent 72%
+    #000 58%,
+    transparent 100%
   );
 }
 
 .site-glow {
   position: absolute;
-  top: -8rem;
-  left: -6rem;
-  width: 40rem;
-  height: 40rem;
-  background: radial-gradient(circle, var(--hero-glow) 0%, transparent 68%);
-  filter: blur(72px);
+  top: 0;
+  left: 0;
+  width: 58rem;
+  height: 42rem;
+  background: radial-gradient(
+    ellipse 80% 70% at 28% 32%,
+    var(--hero-glow) 0%,
+    transparent 72%
+  );
+  filter: blur(64px);
 }
