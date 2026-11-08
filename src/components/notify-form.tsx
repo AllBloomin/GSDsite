@@ -24,7 +24,7 @@ export function NotifyForm() {
 
   if (state.status === "success") {
     return (
-      <p className="mt-6 text-lg font-medium sm:mt-8" role="status">
+      <p className="mt-8 text-xl font-normal leading-normal" role="status">
         Thanks! We&apos;ll send you a confirmation email soon.
       </p>
     );
@@ -32,7 +32,7 @@ export function NotifyForm() {
 
   return (
     <form
-      className="relative mt-6 flex w-full max-w-xl flex-col gap-2 sm:mt-8"
+      className="relative mt-8 flex w-full max-w-xl flex-col gap-2"
       action={formAction}
       noValidate
       onSubmit={onSubmit}
@@ -53,7 +53,7 @@ export function NotifyForm() {
         </label>
         <input
           id="notify-email"
-          className="h-12 min-h-12 w-full rounded-full bg-transparent px-5 text-base text-foreground outline-none placeholder:text-[var(--placeholder)] sm:h-12 sm:min-w-0 sm:flex-1 sm:px-5"
+          className="h-12 min-h-12 w-full rounded-full bg-transparent px-5 text-xl font-normal text-foreground outline-none placeholder:text-[var(--placeholder)] sm:h-12 sm:min-w-0 sm:flex-1 sm:px-5"
           type="email"
           name="email"
           inputMode="email"
@@ -64,7 +64,7 @@ export function NotifyForm() {
           required
         />
         <button
-          className="h-11 shrink-0 rounded-full bg-button px-6 text-base font-bold text-button-fg transition-colors hover:bg-button-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link disabled:opacity-60 sm:h-12 sm:px-7"
+          className="h-11 shrink-0 rounded-full bg-button px-6 text-sm font-semibold text-button-fg transition-colors hover:bg-button-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link disabled:opacity-60 sm:h-12 sm:px-7"
           type="submit"
           disabled={pending}
         >
@@ -72,7 +72,7 @@ export function NotifyForm() {
         </button>
       </div>
       {message ? (
-        <p className="text-sm font-medium" role="alert">
+        <p className="text-sm font-normal leading-normal" role="alert">
           {message}
         </p>
       ) : null}

@@ -4,14 +4,16 @@ import type { Theme } from "@/lib/theme";
 
 export function SiteHeader({ theme }: { theme: Theme }) {
   return (
-    <header className="relative z-20 flex flex-wrap items-center justify-between gap-x-3 gap-y-2 px-4 py-2.5 sm:px-8 sm:py-3">
-      <div className="flex shrink-0 items-center gap-2 sm:gap-4">
-        <SignatureMark className="size-12 shrink-0 sm:size-[7.5rem]" />
-        <p className="whitespace-nowrap text-[clamp(1.5rem,5vw,3.15rem)] font-extrabold leading-none tracking-tight">
-          GSDbots
-        </p>
+    <header className="relative z-20">
+      <div className="mx-auto flex w-full max-w-[1120px] items-center justify-between gap-4 px-6 py-4 sm:px-8">
+        <div className="flex min-w-0 items-center gap-4">
+          <SignatureMark className="size-12 shrink-0 sm:size-[7.5rem]" />
+          <p className="text-xl font-semibold leading-none tracking-tight sm:text-[2.5rem]">
+            GSDbots
+          </p>
+        </div>
+        <ThemeSwitch initialTheme={theme} />
       </div>
-      <ThemeSwitch initialTheme={theme} />
     </header>
   );
 }
