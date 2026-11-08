@@ -8,10 +8,13 @@ export default function Home() {
         <h1 className="max-w-[16ch] text-[clamp(2.25rem,4.5vw,4rem)] font-semibold leading-[1.15] tracking-tight sm:max-w-none">
           Folks with goals are different.
         </h1>
-        <p className="mt-6 max-w-[36rem] text-[1.375rem] font-normal leading-normal">
-          They have an unwavering drive to Get Shit Done (GSD). We have bots
-          for you that help you do just that. And that are fun to work with.
-          Your own, designed to get stuff done.
+        <p className="mt-6 max-w-[36rem] text-[1.375rem] font-normal leading-[1.5]">
+          They have an unwavering drive to Get Shit Done (GSD).
+        </p>
+        <p className="mt-[1.5em] max-w-[36rem] text-[1.375rem] font-normal leading-[1.5]">
+          We build bots that help you do exactly that, and that are fun to
+          work with. They&apos;re yours, and they&apos;re shaped around how
+          you work.
         </p>
         <NotifyForm />
         <p className="mt-4 text-[0.9375rem] font-normal leading-normal text-muted sm:whitespace-nowrap">
