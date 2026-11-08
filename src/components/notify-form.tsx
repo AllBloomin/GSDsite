@@ -24,7 +24,7 @@ export function NotifyForm() {
 
   if (state.status === "success") {
     return (
-      <p className="mt-12 text-lg font-medium" role="status">
+      <p className="mt-6 text-lg font-medium sm:mt-8" role="status">
         Thanks! We&apos;ll send you a confirmation email soon.
       </p>
     );
@@ -32,7 +32,7 @@ export function NotifyForm() {
 
   return (
     <form
-      className="relative mt-12 flex w-full max-w-xl flex-col gap-3"
+      className="relative mt-6 flex w-full max-w-xl flex-col gap-2 sm:mt-8"
       action={formAction}
       noValidate
       onSubmit={onSubmit}
@@ -47,13 +47,13 @@ export function NotifyForm() {
           autoComplete="off"
         />
       </div>
-      <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-stretch">
+      <div className="flex w-full flex-col gap-1.5 rounded-full border border-line p-1.5 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-link sm:flex-row sm:items-center sm:gap-1">
         <label className="sr-only" htmlFor="notify-email">
           Email address
         </label>
         <input
           id="notify-email"
-          className="h-14 min-h-14 w-full rounded-full border border-line bg-transparent px-7 text-base text-foreground outline-none placeholder:text-[var(--placeholder)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link sm:h-16 sm:min-h-16 sm:min-w-0 sm:flex-1 sm:px-5"
+          className="h-12 min-h-12 w-full rounded-full bg-transparent px-5 text-base text-foreground outline-none placeholder:text-[var(--placeholder)] sm:h-12 sm:min-w-0 sm:flex-1 sm:px-5"
           type="email"
           name="email"
           inputMode="email"
@@ -64,7 +64,7 @@ export function NotifyForm() {
           required
         />
         <button
-          className="h-14 shrink-0 rounded-full bg-button px-7 text-base font-bold text-button-fg transition-colors hover:bg-button-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link disabled:opacity-60 sm:h-16 sm:px-8 sm:text-lg"
+          className="h-11 shrink-0 rounded-full bg-button px-6 text-base font-bold text-button-fg transition-colors hover:bg-button-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link disabled:opacity-60 sm:h-12 sm:px-7"
           type="submit"
           disabled={pending}
         >

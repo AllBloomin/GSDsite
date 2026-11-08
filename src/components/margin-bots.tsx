@@ -9,7 +9,7 @@ import {
 export function SideBots() {
   return (
     <div
-      className="mt-12 flex w-full items-end justify-evenly"
+      className="mt-6 flex w-full items-end justify-evenly sm:mt-8"
       aria-hidden="true"
     >
       <TealSpikesBot className="w-[1.85rem] -rotate-[11deg] sm:w-16 lg:w-[4.75rem]" />
