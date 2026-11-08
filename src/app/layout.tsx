@@ -45,7 +45,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       data-theme={theme}
       className={`${exo2.variable} h-full antialiased`}
     >
-      <body className="relative min-h-full overflow-x-hidden bg-background font-sans text-xl font-normal leading-normal text-foreground">
+      <body className="relative flex min-h-dvh flex-col overflow-x-hidden bg-background font-sans text-[1.375rem] font-normal leading-normal text-foreground">
         <SiteHeader theme={theme} />
         {children}
       </body>

@@ -8,7 +8,7 @@ export function SiteHeader({ theme }: { theme: Theme }) {
       <div className="mx-auto flex w-full max-w-[1120px] items-center justify-between gap-4 px-6 py-4 sm:px-8">
         <div className="flex min-w-0 items-center gap-4">
           <SignatureMark className="size-12 shrink-0 sm:size-[7.5rem]" />
-          <p className="text-xl font-semibold leading-none tracking-tight sm:text-[2.5rem]">
+          <p className="text-[1.375rem] font-semibold leading-none tracking-tight sm:text-[clamp(2.25rem,4.5vw,4rem)]">
             GSDbots
           </p>
         </div>

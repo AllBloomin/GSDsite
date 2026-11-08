@@ -23,7 +23,7 @@ export function ThemeSwitch({ initialTheme }: { initialTheme: Theme }) {
         {THEMES.map((theme) => (
           <label
             key={theme}
-            className="cursor-pointer rounded-full px-2 py-1 text-sm font-normal text-foreground has-[:checked]:bg-foreground has-[:checked]:text-background has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-link sm:px-3 sm:py-1.5"
+            className="cursor-pointer rounded-full px-2 py-1 text-[0.9375rem] font-normal text-foreground has-[:checked]:bg-foreground has-[:checked]:text-background has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-link sm:px-3 sm:py-1.5"
           >
             <input
               className="sr-only"
