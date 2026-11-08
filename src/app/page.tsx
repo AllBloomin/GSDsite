@@ -1,10 +1,9 @@
-import { CompactBots, MarginBots } from "@/components/margin-bots";
+import { SideBots } from "@/components/margin-bots";
 import { NotifyForm } from "@/components/notify-form";
 
 export default function Home() {
   return (
     <>
-      <MarginBots />
       <main className="relative z-10 mx-auto flex w-full max-w-3xl flex-col items-center px-6 pb-16 pt-16 text-center sm:pt-24 md:pt-28 lg:pb-24">
         <h1 className="max-w-3xl text-balance text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
           Folks with goals are different.
@@ -32,7 +31,7 @@ export default function Home() {
           There will be early releases very soon.
         </p>
         <NotifyForm />
-        <CompactBots />
+        <SideBots />
       </main>
     </>
   );
