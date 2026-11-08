@@ -46,6 +46,10 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       className={`${exo2.variable} h-full antialiased`}
     >
       <body className="relative flex min-h-dvh flex-col overflow-x-hidden bg-background font-sans text-[1.375rem] font-normal leading-normal text-foreground">
+        <div className="site-backdrop" aria-hidden="true">
+          <div className="site-glow" />
+          <div className="site-grid" />
+        </div>
         <SiteHeader theme={theme} />
         {children}
       </body>
