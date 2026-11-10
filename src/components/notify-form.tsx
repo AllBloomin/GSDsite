@@ -1,13 +1,23 @@
 "use client";
 
+import { track } from "@vercel/analytics";
 import { useActionState, useState, type FormEvent } from "react";
 import { joinSignup, type SignupState } from "@/app/actions";
 import { INVALID_EMAIL_MESSAGE, isSyntacticallyValidEmail } from "@/lib/email";
 
 const initialState: SignupState = { status: "idle" };
 
+function submitSignup(previous: SignupState, formData: FormData) {
+  return joinSignup(previous, formData).then((next) => {
+    if (next.status === "success") {
+      track("signup");
+    }
+    return next;
+  });
+}
+
 export function NotifyForm() {
-  const [state, formAction, pending] = useActionState(joinSignup, initialState);
+  const [state, formAction, pending] = useActionState(submitSignup, initialState);
   const [clientMessage, setClientMessage] = useState<string | null>(null);
   const message =
     clientMessage ?? (state.status === "error" ? state.message : null);
