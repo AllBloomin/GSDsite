@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Exo_2 } from "next/font/google";
 import { cookies } from "next/headers";
+import { Analytics } from "@vercel/analytics/next";
 import { SiteHeader } from "@/components/site-header";
 import { parseTheme, THEME_COOKIE } from "@/lib/theme";
 import "./globals.css";
@@ -52,6 +53,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
         </div>
         <SiteHeader theme={theme} />
         {children}
+        <Analytics />
       </body>
     </html>
   );
