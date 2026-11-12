@@ -2,6 +2,7 @@
 
 import { domainCanReceiveMail } from "@/lib/email-domain";
 import { INVALID_EMAIL_MESSAGE, normalizeEmail } from "@/lib/email";
+import { notifyOwnerOfSignup } from "@/lib/signup-webhook";
 
 export type SignupState =
   | { status: "idle" }
@@ -64,5 +65,6 @@ export async function joinSignup(
     return { status: "error", message: SAVE_FAILED };
   }
 
+  notifyOwnerOfSignup(email);
   return { status: "success" };
 }
