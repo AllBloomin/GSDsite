@@ -14,7 +14,7 @@ const exo2 = Exo_2({
 });
 
 const description =
-  "Bots for folks with an unwavering drive to get stuff done. Your own, designed to get stuff done, and fun to work with.";
+  "A Grok Bot alternative where bots collaborate proactively. They share what they learn and hand work to each other, so you can Get Shit Done (GSD).";
 
 export const metadata: Metadata = {
   title: "GSDbots",
