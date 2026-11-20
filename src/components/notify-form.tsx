@@ -42,7 +42,7 @@ export function NotifyForm() {
 
   return (
     <form
-      className="relative mt-6 flex w-full flex-col sm:mt-8"
+      className="relative mt-6 flex w-full max-w-2xl flex-col sm:mt-8"
       action={formAction}
       noValidate
       onSubmit={onSubmit}
@@ -78,7 +78,7 @@ export function NotifyForm() {
           type="submit"
           disabled={pending}
         >
-          Notify me
+          Be the First to Know
         </button>
       </div>
       {message ? (
