@@ -9,12 +9,10 @@ export default function Home() {
           Folks with goals are different.
         </h1>
         <p className="mt-5 max-w-[36rem] text-[1.375rem] font-normal leading-[1.45] sm:mt-6">
-          They have an unwavering drive to Get Shit Done (GSD).
-        </p>
-        <p className="mt-3 max-w-[36rem] text-[1.375rem] font-normal leading-[1.45] sm:mt-4">
-          We build bots that help you do exactly that, and that are fun to
-          work with. They&apos;re yours, and they&apos;re shaped around how
-          you work.
+          GSDbots is a Grok Bot alternative where bots{" "}
+          <strong className="font-semibold">collaborate proactively</strong>.
+          They share what they learn and hand work to each other, so nothing
+          waits on you to connect the dots.
         </p>
         <NotifyForm />
         <p className="mt-4 text-[0.9375rem] font-normal leading-normal text-muted sm:whitespace-nowrap">
@@ -28,7 +26,7 @@ export default function Home() {
             @bare_knee
           </a>
           {". "}
-          There will be early releases very soon.
+          Early releases are coming very soon.
         </p>
         <SideBots />
       </div>
