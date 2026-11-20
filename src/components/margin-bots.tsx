@@ -10,7 +10,7 @@ const avatar = "h-12 w-auto sm:h-16";
 
 export function SideBots() {
   return (
-    <div className="mt-8 flex items-end justify-start gap-6 sm:gap-8" aria-hidden="true">
+    <div className="mt-4 flex items-end justify-start gap-6 sm:mt-6 sm:gap-8" aria-hidden="true">
       <TealSpikesBot className={avatar} />
       <YellowAfroBot className={avatar} />
       <LavenderSproutBot className={avatar} />

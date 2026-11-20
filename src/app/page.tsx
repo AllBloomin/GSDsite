@@ -3,15 +3,15 @@ import { NotifyForm } from "@/components/notify-form";
 
 export default function Home() {
   return (
-    <main className="relative z-10 flex flex-1 flex-col justify-center pb-8 sm:pb-14">
-      <div className="mx-auto w-full max-w-[1120px] px-6 py-8 sm:px-8">
+    <main className="relative z-10 flex flex-1 flex-col pb-8 sm:pb-10">
+      <div className="mx-auto w-full max-w-[1120px] px-6 py-6 sm:px-8 sm:py-8">
         <h1 className="max-w-[16ch] text-[clamp(2.25rem,4.5vw,4rem)] font-semibold leading-[1.15] tracking-tight sm:max-w-none">
           Folks with goals are different.
         </h1>
-        <p className="mt-6 max-w-[36rem] text-[1.375rem] font-normal leading-[1.5]">
+        <p className="mt-5 max-w-[36rem] text-[1.375rem] font-normal leading-[1.45] sm:mt-6">
           They have an unwavering drive to Get Shit Done (GSD).
         </p>
-        <p className="mt-[1.5em] max-w-[36rem] text-[1.375rem] font-normal leading-[1.5]">
+        <p className="mt-3 max-w-[36rem] text-[1.375rem] font-normal leading-[1.45] sm:mt-4">
           We build bots that help you do exactly that, and that are fun to
           work with. They&apos;re yours, and they&apos;re shaped around how
           you work.
