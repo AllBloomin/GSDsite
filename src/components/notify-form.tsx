@@ -34,7 +34,7 @@ export function NotifyForm() {
 
   if (state.status === "success") {
     return (
-      <p className="mt-8 text-[1.375rem] font-normal leading-normal" role="status">
+      <p className="mt-6 text-[1.375rem] font-normal leading-normal sm:mt-8" role="status">
         Thanks! We&apos;ll send you a confirmation email soon.
       </p>
     );
@@ -42,7 +42,7 @@ export function NotifyForm() {
 
   return (
     <form
-      className="relative mt-8 flex w-full max-w-2xl flex-col gap-2"
+      className="relative mt-6 flex w-full flex-col sm:mt-8"
       action={formAction}
       noValidate
       onSubmit={onSubmit}
@@ -57,35 +57,43 @@ export function NotifyForm() {
           autoComplete="off"
         />
       </div>
-      <div className="flex w-full flex-col gap-1.5 rounded-full border border-line p-1.5 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-link sm:h-14 sm:flex-row sm:items-center sm:gap-1 sm:p-1">
+      <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-center">
         <label className="sr-only" htmlFor="notify-email">
           Email address
         </label>
         <input
           id="notify-email"
-          className="h-12 min-h-12 w-full rounded-full bg-transparent px-5 text-[1.375rem] font-normal text-foreground outline-none placeholder:text-[var(--placeholder)] sm:min-w-0 sm:flex-1 sm:px-5"
+          className="h-14 min-h-14 w-full rounded-full border border-line bg-background px-5 text-[1.25rem] font-normal text-foreground outline-none placeholder:text-[var(--placeholder)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link sm:h-16 sm:min-w-0 sm:flex-1 sm:px-6"
           type="email"
           name="email"
           inputMode="email"
           autoComplete="email"
-          placeholder="yourworkemail@example.com"
+          placeholder="you@company.com"
           spellCheck={false}
           aria-invalid={message !== null}
           required
         />
         <button
-          className="h-12 shrink-0 rounded-full bg-button px-6 text-[1.375rem] font-semibold leading-none text-button-fg transition-colors hover:bg-button-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link disabled:opacity-60 sm:px-7"
+          className="h-14 min-h-14 w-full shrink-0 rounded-full bg-button px-8 text-[1.25rem] font-semibold leading-none text-button-fg transition-colors hover:bg-button-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link disabled:opacity-60 sm:h-16 sm:w-auto sm:px-10"
           type="submit"
           disabled={pending}
         >
-          Be the First to Know
+          Notify me
         </button>
       </div>
       {message ? (
-        <p className="text-[0.9375rem] font-normal leading-normal" role="alert">
+        <p className="mt-3 text-[0.9375rem] font-normal leading-normal" role="alert">
           {message}
         </p>
       ) : null}
+      <div className="mt-4 flex flex-col gap-2">
+        <p className="text-pretty text-[0.9375rem] font-normal leading-snug text-foreground sm:text-base">
+          The first 100 signups lock in founding-member pricing for life.
+        </p>
+        <p className="text-pretty text-[0.9375rem] font-normal leading-snug text-muted">
+          Built while I run my companies with a team of 29 AI bots.
+        </p>
+      </div>
     </form>
   );
 }
