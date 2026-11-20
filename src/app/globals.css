@@ -7,9 +7,10 @@
   --muted: #44403c;
   --line: #d6d1ca;
   --link: #1f5559;
-  --button-bg: #1c1917;
-  --button-fg: #ffffff;
-  --button-hover: #2e2a26;
+  --button-bg: #b76f50;
+  --button-fg: #121212;
+  --button-hover: #c17a58;
+  --button-press: #b36b4c;
   --placeholder: #6b6560;
   --segment: #f3f1ee;
   --hair-black: #000000;
@@ -27,9 +28,10 @@ html[data-theme="dark"] {
   --muted: #c9c2b8;
   --line: #3f3c39;
   --link: #9ed4d6;
-  --button-bg: #f4f1ec;
+  --button-bg: #b76f50;
   --button-fg: #121212;
-  --button-hover: #e4dfd8;
+  --button-hover: #c17a58;
+  --button-press: #b36b4c;
   --placeholder: #9a948c;
   --segment: #1e1e1e;
   --hair-black: #d9d4cc;
@@ -47,9 +49,10 @@ html[data-theme="dark"] {
     --muted: #c9c2b8;
     --line: #3f3c39;
     --link: #9ed4d6;
-    --button-bg: #f4f1ec;
+    --button-bg: #b76f50;
     --button-fg: #121212;
-    --button-hover: #e4dfd8;
+    --button-hover: #c17a58;
+    --button-press: #b36b4c;
     --placeholder: #9a948c;
     --segment: #1e1e1e;
     --hair-black: #d9d4cc;
@@ -69,6 +72,7 @@ html[data-theme="dark"] {
   --color-button: var(--button-bg);
   --color-button-fg: var(--button-fg);
   --color-button-hover: var(--button-hover);
+  --color-button-press: var(--button-press);
   --color-segment: var(--segment);
   --font-sans: var(--font-exo), ui-sans-serif, system-ui, sans-serif;
 }
@@ -77,6 +81,37 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+}
+
+/* A short nod, then a rest, once every three seconds. */
+@keyframes egg-wobble {
+  0%,
+  80% {
+    transform: rotate(0deg);
+  }
+  86% {
+    transform: rotate(-6deg);
+  }
+  92% {
+    transform: rotate(5deg);
+  }
+  97% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.egg-wobble {
+  transform-origin: 50% 68%;
+  animation: egg-wobble 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .egg-wobble {
+    animation: none;
+  }
 }
 
 .site-backdrop {

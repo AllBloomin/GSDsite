@@ -3,6 +3,7 @@
 import { track } from "@vercel/analytics";
 import { useActionState, useState, type FormEvent } from "react";
 import { joinSignup, type SignupState } from "@/app/actions";
+import { SignatureMark } from "@/components/bots";
 import { INVALID_EMAIL_MESSAGE, isSyntacticallyValidEmail } from "@/lib/email";
 
 const initialState: SignupState = { status: "idle" };
@@ -57,7 +58,7 @@ export function NotifyForm() {
           autoComplete="off"
         />
       </div>
-      <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-center">
+      <div className="flex w-full flex-col gap-8 sm:flex-row sm:items-center sm:gap-3">
         <label className="sr-only" htmlFor="notify-email">
           Email address
         </label>
@@ -74,10 +75,11 @@ export function NotifyForm() {
           required
         />
         <button
-          className="h-14 min-h-14 w-full shrink-0 rounded-full bg-button px-8 text-[1.25rem] font-semibold leading-none text-button-fg transition-colors hover:bg-button-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link disabled:opacity-60 sm:h-16 sm:w-auto sm:px-10"
+          className="relative inline-flex h-14 min-h-14 w-full shrink-0 items-center justify-center whitespace-nowrap rounded-full bg-button px-6 text-[1.25rem] font-semibold leading-none text-button-fg transition-colors hover:bg-button-hover active:bg-button-press focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link disabled:opacity-60 sm:h-16 sm:w-auto sm:px-8"
           type="submit"
           disabled={pending}
         >
+          <SignatureMark className="egg-wobble pointer-events-none absolute -top-6 left-3 h-11 w-auto sm:-top-7 sm:left-5 sm:h-12" />
           Be the First to Know
         </button>
       </div>
