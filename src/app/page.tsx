@@ -12,7 +12,8 @@ export default function Home() {
           GSDbots is a Grok Bot alternative where bots{" "}
           <strong className="font-semibold">collaborate proactively</strong>.
           They share what they learn and hand work to each other, so nothing
-          waits on you to connect the dots.
+          waits on you to connect the dots, all for you to Get Shit Done
+          (GSD).
         </p>
         <NotifyForm />
         <p className="mt-4 text-[0.9375rem] font-normal leading-normal text-muted sm:whitespace-nowrap">
