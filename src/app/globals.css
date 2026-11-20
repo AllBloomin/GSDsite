@@ -7,10 +7,10 @@
   --muted: #44403c;
   --line: #d6d1ca;
   --link: #1f5559;
-  --button-bg: #b76f50;
+  --button-bg: #f2762e;
   --button-fg: #121212;
-  --button-hover: #c17a58;
-  --button-press: #b36b4c;
+  --button-hover: #f5833a;
+  --button-press: #e86a22;
   --placeholder: #6b6560;
   --segment: #f3f1ee;
   --hair-black: #000000;
@@ -28,10 +28,10 @@ html[data-theme="dark"] {
   --muted: #c9c2b8;
   --line: #3f3c39;
   --link: #9ed4d6;
-  --button-bg: #b76f50;
+  --button-bg: #f2762e;
   --button-fg: #121212;
-  --button-hover: #c17a58;
-  --button-press: #b36b4c;
+  --button-hover: #f5833a;
+  --button-press: #e86a22;
   --placeholder: #9a948c;
   --segment: #1e1e1e;
   --hair-black: #d9d4cc;
@@ -49,10 +49,10 @@ html[data-theme="dark"] {
     --muted: #c9c2b8;
     --line: #3f3c39;
     --link: #9ed4d6;
-    --button-bg: #b76f50;
+    --button-bg: #f2762e;
     --button-fg: #121212;
-    --button-hover: #c17a58;
-    --button-press: #b36b4c;
+    --button-hover: #f5833a;
+    --button-press: #e86a22;
     --placeholder: #9a948c;
     --segment: #1e1e1e;
     --hair-black: #d9d4cc;
@@ -106,6 +106,8 @@ body {
 .egg-wobble {
   transform-origin: 50% 68%;
   animation: egg-wobble 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 0.6px rgba(255, 247, 237, 0.95))
+    drop-shadow(0 1.5px 1.5px rgba(28, 25, 23, 0.28));
 }
 
 @media (prefers-reduced-motion: reduce) {
